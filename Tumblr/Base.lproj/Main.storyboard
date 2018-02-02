@@ -23,13 +23,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="173" id="hAS-X2-0Gs" customClass="PhotoCell" customModule="Tumblr" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="173"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="153" id="guV-St-boQ" customClass="PhotoCell" customModule="Tumblr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hAS-X2-0Gs" id="kUC-Gw-qij">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="172.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="guV-St-boQ" id="oUo-lZ-fNl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="152.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yd9-9W-cqp">
+                                                    <rect key="frame" x="74" y="11" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="photoImageCell" destination="Yd9-9W-cqp" id="C3A-ak-WRM"/>
+                                            <outlet property="photoImageView" destination="Yd9-9W-cqp" id="IXd-sk-VpL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -39,17 +49,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="RXa-LM-EHm"/>
                     <connections>
-                        <outlet property="photoView" destination="hAS-X2-0Gs" id="v1k-gZ-l5h"/>
                         <outlet property="tableView" destination="DWg-yd-xPn" id="4Qd-wm-VFX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037.5999999999999" y="115.59220389805098"/>
+            <point key="canvasLocation" x="1036" y="114.69265367316342"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HYt-D4-E87">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRF-dq-auH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rWA-EN-SuS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Zf-Rs-QK2">
@@ -61,7 +71,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WiZ-Sb-Hq4"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GRF-dq-auH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="83.200000000000003" y="116.94152923538232"/>
         </scene>

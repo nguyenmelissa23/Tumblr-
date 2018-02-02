@@ -6,13 +6,7 @@ target 'Tumblr' do
   use_frameworks!
 
   # Pods for Tumblr
-pod 'Alamofire', '~> 4.4'
-  # Add additional dependencies
-  pod 'OAuthSwift', '~> 1.1.0'
-  pod 'OAuthSwiftAlamofire'
-  pod 'AlamofireImage' 
-
-
+  pod 'AlamofireImage', '~> 3.1'
   target 'TumblrTests' do
     inherit! :search_paths
     # Pods for testing

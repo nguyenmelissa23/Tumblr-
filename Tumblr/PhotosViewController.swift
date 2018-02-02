@@ -11,8 +11,6 @@ import AlamofireImage
 
 class PhotosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var photoView: PhotoCell!
-   
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,9 +18,10 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(indexPath.row)
         let post = posts[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell") as! PhotoCell
-        cell.textLabel?.text = "This is row \(indexPath.row)"
+//        cell.textLabel?.text = "This is row \(indexPath.row)"
         
     
         
@@ -36,7 +35,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             // 4.
             let url = URL(string: urlString)
             
-            cell.photoView.af_setImage(withURL: url!)
+        cell.photoImageView.af_setImage(withURL: url!)
         }
         
         return cell
