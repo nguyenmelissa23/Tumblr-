@@ -45,7 +45,7 @@ the version compatible with our laptops and xCode. Lowering the version worked f
 
 ## License
 
-    Copyright [2018] [Jigyasaa Sood]
+    Copyright [2018] [Jigyasaa Sood & Melissa Nguyen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
