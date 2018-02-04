@@ -29,6 +29,11 @@ Please list two areas of the assignment you'd like to **discuss further with you
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+https://giphy.com/gifs/xUOwG2D0Jm9PYTUGJ2/html5
+
+https://imgur.com/a/4GDzA
+
+
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
