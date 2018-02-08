@@ -21,7 +21,7 @@ class PhotoDetailsViewController: UIViewController {
         super.viewDidLoad()
         print(self.photo)
         let currPost = self.photo[0]
-        captionLabel.text = currPost["summary"] as! String
+        captionLabel.text = currPost["summary"] as? String
         if let photos = currPost["photos"] as? [[String: Any]]{
             
             let firstPhoto = photos[0]
@@ -45,6 +45,16 @@ class PhotoDetailsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! FullScreenPhotoViewController
+        let image = sender as! UIImageView
+        vc.zoomImageView = image
+        
+    }*/
+    
+    
+    //performSegue(withIdentifier:"zoomSegue", sender:nil)
     
     
 
