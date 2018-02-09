@@ -54,7 +54,7 @@ class PhotoDetailsViewController: UIViewController {
     }*/
     
     
-    //performSegue(withIdentifier:"zoomSegue", sender:nil)
+   
     
     
 
